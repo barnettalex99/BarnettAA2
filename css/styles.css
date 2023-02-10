@@ -2,19 +2,19 @@
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 500px 2fr;
+    grid-template-rows: 350px 2fr;
 }
 
 header {
     background-color: rgb(73, 69, 114);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 75px 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr;
 
 }
 
 .hero-image-container{
-    height: 175px;
+    height: 125px;
     width: 900px;
     max-width: 75vw;
     background-image: url("../images/hero-image.png");
@@ -23,25 +23,36 @@ header {
     grid-row: 2/3;
     grid-column: 2/4;
     border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 4fr 5fr;
-    grid-template-rows: 1fr;
+    display: flex;
     
 }
 
-#split-1, #split-2, #split-3, #split-4, #split-5 {
+#split-1, #split-2, #split-3 {
     border: solid 10px rgb(73, 69, 114);
+    width: 7%;
+}
+#split-4, #split-5 {
+    border: solid 10px rgb(73, 69, 114);
+    width: 15%;
+}
+
+#split-6 {
+    border: solid 10px rgb(73, 69, 114);
+    width: 39%;
 }
 
 nav {
     grid-column: 3/4;
+    align-self: center;
+    justify-self: center;
 }
 
 .welcome-container {
     color: white;
     grid-column: 1/2;
     grid-row: 3/4;
-    margin: 50px;
+    margin-left: 50px;
+    align-self: center;
 }
 
 ul {
@@ -95,4 +106,10 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(73, 69, 114);
+    color:white;
+}
+
+li:hover{
+    color: rgb(185, 203, 173);
 }
